@@ -18,7 +18,7 @@ from django.urls import path,re_path
 from mainsite.views import homepage,showpost
 
 urlpatterns = [
-    re_path(r'post/(\w+)',showpost),
+    re_path('^post/(.+)',showpost),
     path(r'',homepage),
-    path(r'admin/', admin.site.urls),
+	path(r'admin/',admin.site.urls),
 ]
