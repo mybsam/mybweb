@@ -1,7 +1,39 @@
-{% block footer %}
-	{% if now %}
-		<p style="font-family:微软雅黑;">现在时刻：{{now}}</p>
-	{% else %}
-		<p style="font-family:微软雅黑;">本文内容取自网络，如有侵权请来信通知下架...</p>
-	{% endif %}
-{% endblock %}
+{% load staticfiles %}
+<div style="margin-top:20px;border-top:1px solid #e4e4e4;border-bottom:1px solid #e4e4e4;min-height:225px;">
+	<div style="width:80%;margin:0 auto;padding-top:20px;padding-bottom:10px">
+		<div style="border-left:1px solid #e4e4e4;padding-left:30px;width:20%;float:left;">
+			<div>好文推荐</div>
+				<ul class='nav flex-column'>
+					<li class='nav-item'><a class='nav-link'>1</a></li>
+					<li class='nav-item'><a class='nav-link'>1</a></li>
+					<li class='nav-item'><a class='nav-link'>1</a></li>
+					<li class='nav-item'><a class='nav-link'>1</a></li>
+				</ul>
+		</div>
+		<div style="border-left:1px solid #e4e4e4;padding-left:30px;width:20%;float:left">
+			<div>网站推荐</div>
+				<ul class='nav flex-column'>
+					<li class='nav-item'><a class='nav-link'>1</a></li>
+					<li class='nav-item'><a class='nav-link'>1</a></li>
+					<li class='nav-item'><a class='nav-link'>1</a></li>
+					<li class='nav-item'><a class='nav-link'>1</a></li>
+				<ul>
+		</div>
+		<div style="border-left:1px solid #e4e4e4;padding-left:30px;width:20%;float:left">
+			<div style="padding-bottom:5px;">关注微信</div>
+				<img style="max-width:90%" class="img-fluid" src="{% static 'images/wechat.jpg' %}">
+		</div>
+		<div style="border-left:1px solid #e4e4e4;padding-left:30px;width:20%;float:left">
+			<div style="padding-bottom:5px;">个人账号</div>
+				<ul class='nav flex-column'>
+					<li class='nav-item'><a class='nav-link' href="https://www.zhihu.com/people/mayongbang">知乎</a></li>
+					<li class='nav-item'><a class='nav-link' href="https://github.com/mybsam">Github</a></li>
+					<li class='nav-item'><a class='nav-link' href="mailto:545682907@qq.com">QQ邮箱</a></li>
+				<ul>
+				
+		</div>
+	</div>
+</div>
+<div style="margin-top:20px;text-align:center;color:#848484">Copyright @2018 马永邦 mayongbang.com All Rights Reserved 备案号：粤ICP备17156751号<div>
+			
+					
