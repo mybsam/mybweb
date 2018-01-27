@@ -15,10 +15,10 @@ Including another URLconf
 """
 from django.contrib import admin
 from django.urls import path,re_path
-from mainsite.views import homepage,showpost
+from mainsite.views import homepage,passage
 
 urlpatterns = [
-    re_path('^post/(.+)',showpost),
+    path(r'category/passage',passage),
     path(r'',homepage),
 	path(r'admin/',admin.site.urls),
 ]

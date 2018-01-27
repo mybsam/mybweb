@@ -1,22 +1,27 @@
 {% load staticfiles %}
 
-<nav class="navbar navbar-expand-sm bg-light fixed-top">
-  <a style="font-size:25px;" class="navbar-brand">马永邦的个人网站</a>
+<nav class="navbar navbar-expand-sm bg-dark fixed-top navbar-dark">
+  <a class="navbar-brand" href='/'>马永邦的个人网站</a>
+  <button class="navbar-toggler"  type="button" data-toggle="collapse" data-target="#nnav">
+	<span class="navbar-toggler-icon"></span>
+  </button>
   <!-- Links -->
-  <ul class="navbar-nav" style="font-size:18px"
-    <li class="nav-item">
-      <a class="nav-link" href="#">文章</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">爬虫</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link" href="#">统计</a>
-    </li>
-	<li class="nav-item">
-      <a class="nav-link" href="#">个人</a>
-    </li>
-  </ul>
+  <div class="collapse navbar-collapse" id="nnav">
+	  <ul class="navbar-nav">
+		<li class="nav-item">
+		  <a class="nav-link" href="/category/passage">文章</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="/category/crawl">爬虫</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="/category/statistics">统计</a>
+		</li>
+		<li class="nav-item">
+		  <a class="nav-link" href="/category/personal">个人</a>
+		</li>
+	  </ul>
+   </div>
 </nav>
 <br>
 <br>
